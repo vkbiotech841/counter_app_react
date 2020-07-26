@@ -13,7 +13,7 @@ class Counter extends Component {
   render() {
     console.log('props', this.props);
     return (
-      <React.Fragment>
+      <div>
         {this.props.children}
 
         <span
@@ -25,17 +25,18 @@ class Counter extends Component {
         <button
           style={{ width: 100 }}
           className="btn btn-secondary btn-sm"
-          onClick={() => this.props.onIncreament(this.props.counter)}>
+          onClick={() => this.props.onIncreamentCounter(this.props.counter)}
+        >
           Increament
         </button>
 
         <button
-          onClick={() => this.props.onDelete(this.props.counter.id)}
+          onClick={() => this.props.onDeleteCounter(this.props.counter.id)}
           className="btn btn-danger btn-sm m-2">
           Delete
         </button>
 
-      </React.Fragment>
+      </div>
     );
   };
 
