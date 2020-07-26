@@ -3,7 +3,12 @@ import Counter from './counter';
 
 class Counters extends Component {
 
+
     render() {
+        console.log('Counters-Rendered');
+        // Access properties of a props using object destructing method.
+        // In this case, we can remove if destruture the object, then we need to remove the this.props from evenwhere.
+        // const { onReset, counters, onDelete, onIncreament } = this.props;
         return (
             <div>
                 <button

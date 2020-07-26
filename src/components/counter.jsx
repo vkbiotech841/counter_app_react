@@ -3,14 +3,24 @@ import React, { Component } from "react";
 
 class Counter extends Component {
 
+  componentDidMount(prevProps, prevState) {
+    console.log('prevProps', prevProps);
+    console.log('prevState', prevState);
+  };
+
+  // React life hook: UNMOUNTING PHASE
+  componentWillUnmount() {
+    console.log('Counter- Unmount');
+  };
+
   styles = {
     fontSize: 10,
     fontWeight: "bold",
   };
 
 
-
   render() {
+    console.log('Counter-Rendered');
     console.log('props', this.props);
     return (
       <div>
