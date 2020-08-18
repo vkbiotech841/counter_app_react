@@ -1,14 +1,14 @@
 ## ScreenShots:
 
-# Couter at initial state
+Couter at initial state
 
 ![Optional Text](../master/src/images/counterapp_01.png)
 
-# Couter at displaying number of active counters
+Couter at displaying number of active counters
 
 ![Optional Text](../master/src/images/counterapp_02.png)
 
-# Couter at displaying number of active counters upon deletion of some couters
+Couter at displaying number of active counters upon deletion of some couters
 
 ![Optional Text](../master/src/images/counterapp_03.png)
 
