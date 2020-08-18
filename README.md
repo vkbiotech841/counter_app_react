@@ -1,3 +1,7 @@
+## ScreenShots:
+
+![Optional Text](../master/src/images/counterapp.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -5,6 +9,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
+
+SHORT-CUTS:
+
+## First add Simple React Snippet.
+
+## import react : type "imrc"
+
+## create a class : type "cc"
+
+## create a stateless function: type "sfc"
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

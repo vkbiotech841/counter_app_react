@@ -1,8 +1,3 @@
-// SHORT-CUTS:
-// import react : type "imrc"
-// create a class : type "cc"
-// create a stateless function: type "sfc"
-
 import React, { Component } from "react";
 
 

@@ -3,20 +3,25 @@ import NavBar from './components/navbar';
 import './App.css';
 import Counters from './components/counters';
 
+// SHORT-CUTS:
+// First add Simple React Snippet.
+// import react : type "imrc"
+// create a class : type "cc"
+// create a stateless function: type "sfc"
 
 // Reactive lifecycle hooks in order: (1) Mounting phase (2) Render method. (3) componentDidMount phase (4) Unmounting phase
 class App extends Component {
 
   state = {
     counters: [
-      { id: 1, value: 4 },
+      { id: 1, value: 0 },
       { id: 2, value: 0 },
       { id: 3, value: 0 },
       { id: 4, value: 0 },
     ]
   };
 
-  // MOUNTING PHASE of lifecycle hook: constructor method is called. it is called only once when the instance of the class is created.
+  // MOUNTING PHASE of lifecycle hook: constructor method is called. it is called only once, when the instance of the class is created.
   constructor() {
     super();
     console.log('App-Constructor');
@@ -56,7 +61,6 @@ class App extends Component {
   // Render phase of lifecycle hook: Once a component is rendered. their childrens are also rendered recursively.
   render() {
     console.log('App-Rendered');
-
     return (
       <React.Fragment>
         <NavBar totalCounters={this.state.counters.filter(c => c.value > 0).length} />
