@@ -2,6 +2,17 @@
 
 ![Optional Text](../master/src/images/counterapp.png)
 
+## Installation Process
+
+#clone the repository
+git clone https://github.com/vkbiotech841/counter_app_react
+
+#install the npm packages
+npm install
+
+#run the app
+npm start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -10,15 +21,15 @@ In the project directory, you can run:
 
 ### `npm start`
 
-SHORT-CUTS:
+## SHORT-CUTS:
 
-## First add Simple React Snippet.
+First add Simple React Snippet.
 
-## import react : type "imrc"
+import react : type "imrc"
 
-## create a class : type "cc"
+create a class : type "cc"
 
-## create a stateless function: type "sfc"
+create a stateless function: type "sfc"
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
