@@ -6,7 +6,8 @@ import React, { Component } from 'react';
 // if we are using SFC, then we need to pass props as an argument to the function. 
 // Since, props becomes local to the component. Hence, we should not use "this" key inside the function refering to props.
 // React lifecycle hook can't be used for stateless functional component.
-// Why SFC: We create SFC just for representation and managing clear data follow. That means that just to get data from the parent and display to the UI.
+// Why SFC: We create SFC just for representation and managing clear data follow. 
+// That means that just to get data from the parent and display to the UI.
 // Hence, we create several SFC. 
 
 const NavBar = (props) => {
@@ -15,7 +16,7 @@ const NavBar = (props) => {
         <nav className="navbar navbar-light bg-light">
             <a className="navbar-brand">
                 Navbar{" "}
-                <span className="badge badge-pill badg-secondary">
+                <span className="badge badge-pill badge-secondary">
                     {props.totalCounters}
                 </span>
             </a>
@@ -23,11 +24,5 @@ const NavBar = (props) => {
     );
 };
 
-
-// class NavBar extends Component {
-//     render() {
-
-//     }
-// }
 
 export default NavBar;

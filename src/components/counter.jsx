@@ -14,8 +14,9 @@ class Counter extends Component {
   };
 
   styles = {
-    fontSize: 10,
+    fontSize: 15,
     fontWeight: "bold",
+    width: 50,
   };
 
 
@@ -33,11 +34,11 @@ class Counter extends Component {
         </span>
 
         <button
-          style={{ width: 100 }}
+          style={{ width: 40 }}
           className="btn btn-secondary btn-sm"
           onClick={() => this.props.onIncreamentCounter(this.props.counter)}
         >
-          Increament
+          +
         </button>
 
         <button
@@ -65,3 +66,8 @@ class Counter extends Component {
 }
 
 export default Counter;
+
+
+// Controlled component: 
+// child component is controlled from the parent component. Means, child componens gets all data from the parent
+// component using props. and child component raise the event. that event will be handled by the parent component.
