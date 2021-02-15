@@ -65,6 +65,12 @@ class App extends Component {
     this.setState({ counters: counters });
   };
 
+  sum = 0;
+  handleTotalCount = (counter) => {
+    this.sum += counter.value;
+    return this.sum;
+  };
+
 
   // Render phase of lifecycle hook: Once a component is rendered. their childrens are also rendered recursively.
   // Render is responsible for how UI should look like. 
@@ -79,15 +85,24 @@ class App extends Component {
 
   render() {
     console.log('App-Rendered');
+    console.log(this.state.counters);
+    let x = 0;
     return (
       <React.Fragment>
-        <NavBar totalCounters={this.state.counters.filter(c => c.value > 0).length} />
+        <NavBar totalCounters={
+          this.state.counters.filter(c => c.value > 0).length}
+          counters={
+            this.state.counters.filter(c => c.value > 0)}
+        />
         <main className="container">
           <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
             onIncreament={this.handleIncreament}
-            onDelete={this.handleDelete}>
+            onDelete={this.handleDelete}
+            onTotalCount={this.handleTotalCount}
+          >
+
           </Counters>
         </main>
       </React.Fragment>
@@ -109,4 +124,4 @@ export default App;
 
 
 // THUMB RULE: 
-// The component that ows a piece of the state, should be the one modifying it.
+// The component that owns a piece of the state, should be the one who modifying it.

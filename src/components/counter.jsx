@@ -69,5 +69,5 @@ export default Counter;
 
 
 // Controlled component: 
-// child component is controlled from the parent component. Means, child componens gets all data from the parent
+// child component is controlled from the parent component. Means, child components gets all data from the parent
 // component using props. and child component raise the event. that event will be handled by the parent component.

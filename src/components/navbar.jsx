@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // Statefull component: are react component with class.
 // Stateless functional component (sfc)/Presentational components or dumb component: 
@@ -12,12 +12,19 @@ import React, { Component } from 'react';
 
 const NavBar = (props) => {
     console.log('NavBar-Rendered');
+    let sum = 0;
+    props.counters.forEach(x => {
+        sum += x.value;
+    });
     return (
         <nav className="navbar navbar-light bg-light">
             <a className="navbar-brand">
                 Navbar{" "}
-                <span className="badge badge-pill badge-secondary">
-                    {props.totalCounters}
+                <span className="badge badge-pill badge-secondary m-2">
+                    Total Counters: {props.totalCounters}
+                </span>
+                <span className="badge badge-pill badge-secondary m-2">
+                    Total Count: {sum}
                 </span>
             </a>
         </nav>
